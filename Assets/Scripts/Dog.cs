@@ -7,14 +7,13 @@ public class Dog : MonoBehaviour
 	public int speed;
 	public int diggingspeed;
 	public Transform dogplace;
+	public Dictionary <string,int> inventory = new Dictionary <string,int>();
 
 	Vector3 lookposition;
 	Vector3 clickposition;
 	bool digging = false;
 	bool gotOrder = false;
 	float diggingtime;
-	
-	Dictionary <string,int> inventory = new Dictionary <string,int>();
 
 	// Start is called before the first frame update
 	void Start(){
@@ -56,7 +55,6 @@ public class Dog : MonoBehaviour
 			if(diggingtime < diggingspeed){
 				diggingtime += Time.deltaTime;
 			} else {
-				Debug.Log ("TEST");
 				digging = false;
 				gotOrder = false;
 				diggingtime = 0;
@@ -76,11 +74,5 @@ public class Dog : MonoBehaviour
 			inventory[_object.name] = 1;
 		}
 		Destroy(_object);
-	}
-	
-	void ShowInventory(){
-		foreach(string key in inventory.Keys){
-			Debug.Log(key + " " + inventory[key]);
-		}
 	}
 }
