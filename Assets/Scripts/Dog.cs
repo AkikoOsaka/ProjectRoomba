@@ -68,6 +68,7 @@ public class Dog : MonoBehaviour
 	}
 	
 	void PlaceInInventory(GameObject _object){
+		Debug.Log(_object.name);
 		if(inventory.ContainsKey(_object.name)){
 			inventory[_object.name] += 1;
 		} else {

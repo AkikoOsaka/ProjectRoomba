@@ -69,6 +69,16 @@ public class Controls : MonoBehaviour
 							workbenchRobosCanvas.BroadcastMessage ("ShowInWorkbench", key + "_" + temp);
 						}
 					}
+					
+					if(hit.transform.name == "Workbench_Artefacts"){
+						workbenchArtefactsCanvas.SetActive(true);
+						menuOpen = true;
+						
+						foreach(string key in dogController.GetComponent<Dog>().inventory.Keys){
+							string temp = dogController.GetComponent<Dog>().inventory[key].ToString();
+							workbenchArtefactsCanvas.BroadcastMessage ("ShowInWorkbench", key + "_" + temp);
+						}
+					}
 				} else {
 					//Debug.Log(hit.transform.name);
 				}
@@ -199,7 +209,7 @@ public class Controls : MonoBehaviour
 				workbenchRobosCanvas.BroadcastMessage ("DisableSelectionIcon", selectedParts);
 				workbenchRobosCanvas.SetActive(false);
 			} else if(_workbenchname == "Artefact") {
-				workbenchRobosCanvas.BroadcastMessage ("DisableSelectionIcon", selectedParts);
+				workbenchArtefactsCanvas.BroadcastMessage ("DisableSelectionIcon", selectedParts);
 				workbenchArtefactsCanvas.SetActive(false);
 			}
 			
@@ -210,7 +220,7 @@ public class Controls : MonoBehaviour
 			if(_workbenchname == "Robo"){
 				workbenchRobosCanvas.BroadcastMessage ("DisableSelectionIcon", selectedParts);
 			} else if(_workbenchname == "Artefact") {
-				workbenchRobosCanvas.BroadcastMessage ("DisableSelectionIcon", selectedParts);
+				workbenchArtefactsCanvas.BroadcastMessage ("DisableSelectionIcon", selectedParts);
 			}
 		}
 		
