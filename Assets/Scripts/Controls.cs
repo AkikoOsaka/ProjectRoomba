@@ -28,6 +28,14 @@ public class Controls : MonoBehaviour
 				if(hit.transform.name.Contains("Findspot")){
 					dogController.SendMessage ("MoveTo", hit.point);
 				}
+				
+				if(hit.transform.name.Contains("Find_")){
+					dogController.SendMessage ("PlaceInInventory", hit.transform.gameObject);
+				}
+				
+				if(hit.transform.name == "Dog"){
+					dogController.SendMessage ("ShowInventory");
+				}
 				//Debug.Log(hit.point);
 			}
 		}

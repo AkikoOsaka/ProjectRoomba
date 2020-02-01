@@ -61,6 +61,7 @@ public class Dog : MonoBehaviour
 				gotOrder = false;
 				diggingtime = 0;
 				GameObject findObject = Instantiate (_collision.gameObject.GetComponent<Findspot>().find, gameObject.transform.parent);
+				findObject.name = _collision.gameObject.GetComponent<Findspot>().find.name;
 				findObject.transform.position = gameObject.transform.position;
 				Destroy (_collision.gameObject);
 			}
@@ -68,11 +69,18 @@ public class Dog : MonoBehaviour
 		}
 	}
 	
-	void PlaceInInventory(string _objectName){
-		if(inventory.ContainsKey(_objectName)){
-			inventory[_objectName] += 1;
+	void PlaceInInventory(GameObject _object){
+		if(inventory.ContainsKey(_object.name)){
+			inventory[_object.name] += 1;
 		} else {
-			inventory[_objectName] = 1;
+			inventory[_object.name] = 1;
+		}
+		Destroy(_object);
+	}
+	
+	void ShowInventory(){
+		foreach(string key in inventory.Keys){
+			Debug.Log(key + " " + inventory[key]);
 		}
 	}
 }
