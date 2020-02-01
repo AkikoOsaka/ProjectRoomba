@@ -15,7 +15,9 @@ public class Controls : MonoBehaviour
 	
 	bool menuOpen = false;
 	bool successfulRepair = false;
+	bool moveCamera = false;
 	int wrongPart = 0;
+	float speed = 2f;
 	List<string> selectedParts = new List<string>();
 	List<string> redParts = new List<string>();
 	List<string> blueParts = new List<string>();
@@ -73,7 +75,41 @@ public class Controls : MonoBehaviour
 				//Debug.Log(hit.point);
 			}
 		}
+		
+		if(moveCamera){
+			transform.position = Vector2.MoveTowards (transform.position, new Vector2(playerController.transform.position.x, transform.position.y), Time.deltaTime * speed);
+		}
     }
+	
+	void OnTriggerExit(Collider _collision){
+		/*if (Vector3.Distance (transform.position, playerController.transform.position) > 10) {
+			transform.position = Vector3.MoveTowards (transform.position, new Vector3(playerController.transform.position.x, transform.position.y, playerController.transform.position.z), Time.deltaTime * speed);
+			Debug.Log("Kamera");
+		} else {
+			//transform.position = playerController.transform.position;
+		}*/
+		
+		if(_collision.gameObject.name == playerController.name){
+			//transform.position = Vector3.MoveTowards (transform.position,  playerController.transform.position, Time.deltaTime * speed);
+			moveCamera = true;
+			Debug.Log(_collision.gameObject.name);
+		}
+	}
+	
+	void OnTriggerStay(Collider _collision){
+		/*if (Vector3.Distance (transform.position, playerController.transform.position) > 10) {
+			transform.position = Vector3.MoveTowards (transform.position, new Vector3(playerController.transform.position.x, transform.position.y, playerController.transform.position.z), Time.deltaTime * speed);
+			Debug.Log("Kamera");
+		} else {
+			//transform.position = playerController.transform.position;
+		}*/
+		
+		if(_collision.gameObject.name == playerController.name){
+			//transform.position = Vector3.MoveTowards (transform.position,  playerController.transform.position, Time.deltaTime * speed);
+			moveCamera = false;
+			//Debug.Log(_collision.gameObject.name);
+		}
+	}
 	
 	public void UsePartInWorkbench(){
 		selectedPart = EventSystem.current.currentSelectedGameObject;
