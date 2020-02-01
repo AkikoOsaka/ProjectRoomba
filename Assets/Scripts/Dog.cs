@@ -5,10 +5,16 @@ using UnityEngine;
 public class Dog : MonoBehaviour
 {
 	public int speed;
+	public int diggingspeed;
+	public Transform dogplace;
 
 	Vector3 lookposition;
 	Vector3 clickposition;
 	bool digging = false;
+	bool gotOrder = false;
+	float diggingtime;
+	
+	Dictionary <string,int> inventory = new Dictionary <string,int>();
 
 	// Start is called before the first frame update
 	void Start(){
@@ -17,25 +23,56 @@ public class Dog : MonoBehaviour
 
 	// Update is called once per frame
 	void Update(){
-		if (Vector3.Distance (transform.position, lookposition) > 0.1) {
-			transform.position = Vector3.MoveTowards (transform.position, lookposition, Time.deltaTime * speed);
-		} else {
-			transform.position = lookposition;
-			digging = true;
-		}
 
+		if(gotOrder){
+			if (Vector3.Distance (transform.position, lookposition) > 0.4) {
+				transform.position = Vector3.MoveTowards (transform.position, lookposition, Time.deltaTime * speed);
+			} else {
+				transform.position = lookposition;
+				digging = true;
+			}
+		} else {
+			if (Vector3.Distance (transform.position, dogplace.position) > 0.4) {
+				transform.position = Vector3.MoveTowards (transform.position, dogplace.position, Time.deltaTime * speed);
+			} else {
+				transform.position = dogplace.position;
+			}
+		}
 	}
 
 	void MoveTo(Vector3 _clickposition){
+		if(digging){
+			digging = false;
+			diggingtime = 0;
+		}
+		
 		lookposition = new Vector3 (_clickposition.x, transform.position.y, _clickposition.z);
-		Debug.Log (lookposition);
 		transform.LookAt(lookposition);
+		gotOrder = true;
 	}
 
-	void OnCollisionEnter(Collision _collision){
+	void OnCollisionStay(Collision _collision){
 		if(digging){
-
-			Destroy (_collision.gameObject);
+			if(diggingtime < diggingspeed){
+				diggingtime += Time.deltaTime;
+			} else {
+				Debug.Log ("TEST");
+				digging = false;
+				gotOrder = false;
+				diggingtime = 0;
+				GameObject findObject = Instantiate (_collision.gameObject.GetComponent<Findspot>().find, gameObject.transform.parent);
+				findObject.transform.position = gameObject.transform.position;
+				Destroy (_collision.gameObject);
+			}
+			
+		}
+	}
+	
+	void PlaceInInventory(string _objectName){
+		if(inventory.ContainsKey(_objectName)){
+			inventory[_objectName] += 1;
+		} else {
+			inventory[_objectName] = 1;
 		}
 	}
 }

@@ -25,7 +25,6 @@ public class Player : MonoBehaviour
 
 	void MoveTo(Vector3 _clickposition){
 		lookposition = new Vector3 (_clickposition.x, transform.position.y, _clickposition.z);
-		Debug.Log (lookposition);
 		transform.LookAt(lookposition);
 	}
 }
