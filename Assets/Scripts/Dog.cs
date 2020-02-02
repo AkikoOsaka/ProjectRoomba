@@ -31,6 +31,7 @@ public class Dog : MonoBehaviour
 				digging = true;
 			}
 		} else {
+			transform.LookAt(new Vector3 (dogplace.parent.position.x, transform.position.y, dogplace.parent.position.z));
 			if (Vector3.Distance (transform.position, dogplace.position) > 0.4) {
 				transform.position = Vector3.MoveTowards (transform.position, dogplace.position, Time.deltaTime * speed);
 			} else {
