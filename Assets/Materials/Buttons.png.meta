@@ -1,60 +1,12 @@
 fileFormatVersion: 2
-guid: e1aaab9cd67664747ac8d137dd302136
+guid: fca846510e0c065419cf4faf93ea5627
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -7903320056360935338
-    second: Exit_normal
-  - first:
-      213: 4710723460139988948
-    second: Exit_hover
-  - first:
-      213: 3875226219354868036
-    second: Back_normal
-  - first:
-      213: 8604604435183667055
-    second: Back_hover
-  - first:
-      213: -4990833540842637474
-    second: Main_normal
-  - first:
-      213: 8417570443743141748
-    second: Main_hover
-  - first:
-      213: -2570222882312089789
-    second: Repair_normal
-  - first:
-      213: 1202034531278296156
-    second: Repair_hover
-  - first:
-      213: 669728374543960714
-    second: Rigth_normal
-  - first:
-      213: 7666969236459605916
-    second: Rigth_hover
-  - first:
-      213: 635968948789130006
-    second: Credits_normal
-  - first:
-      213: -8385432468816900822
-    second: Credits_hover
-  - first:
-      213: 7337808314162481149
-    second: HowTo_hover
-  - first:
-      213: 239493015014907453
-    second: HowTo_normal
-  - first:
-      213: -2448557960969093834
-    second: Left_hover
-  - first:
-      213: -876261638491424073
-    second: Left_normal
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -82,13 +34,13 @@ TextureImporter:
     filterMode: -1
     aniso: 2
     mipBias: -100
-    wrapU: 1
-    wrapV: 1
+    wrapU: 0
+    wrapV: 0
     wrapW: 0
-  nPOTScale: 0
+  nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 0
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -97,9 +49,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 0
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -168,347 +120,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Exit_normal
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 834
-        width: 390
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54ad0fd034c72084cb7bd046622a7618
-      internalID: -7903320056360935338
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Exit_hover
-      rect:
-        serializedVersion: 2
-        x: 493
-        y: 829
-        width: 390
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c043383f9fa83054eb8e732329a60bab
-      internalID: 4710723460139988948
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Back_normal
-      rect:
-        serializedVersion: 2
-        x: 959
-        y: 841
-        width: 390
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 956aae368b50b2a48bc226547275a951
-      internalID: 3875226219354868036
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Back_hover
-      rect:
-        serializedVersion: 2
-        x: 1417
-        y: 841
-        width: 390
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 820f01f7d738d694081357535b66b14a
-      internalID: 8604604435183667055
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_normal
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 587
-        width: 390
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8029b00c77588304f9c728ba68a20da1
-      internalID: -4990833540842637474
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_hover
-      rect:
-        serializedVersion: 2
-        x: 505
-        y: 579
-        width: 390
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e7ba292129b55f48bff69b8f1c0a172
-      internalID: 8417570443743141748
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Repair_normal
-      rect:
-        serializedVersion: 2
-        x: 973
-        y: 573
-        width: 390
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17779217263832e4992ae9933b1efcea
-      internalID: -2570222882312089789
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Repair_hover
-      rect:
-        serializedVersion: 2
-        x: 1435
-        y: 571
-        width: 390
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45a6ce60eff5b4b44a370d745df8a124
-      internalID: 1202034531278296156
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rigth_normal
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 336
-        width: 390
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00be0f5e774f3ee4d92487caf97b1662
-      internalID: 669728374543960714
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rigth_hover
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 334
-        width: 390
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a81d64063cf64d4388a9f9dc90f0dbc
-      internalID: 7666969236459605916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Credits_normal
-      rect:
-        serializedVersion: 2
-        x: 982
-        y: 308
-        width: 390
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f71c8865e3ee6f49897f1657e452508
-      internalID: 635968948789130006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Credits_hover
-      rect:
-        serializedVersion: 2
-        x: 1442
-        y: 304
-        width: 390
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e3feae7e002ff242890ac99d4f69c23
-      internalID: -8385432468816900822
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HowTo_hover
-      rect:
-        serializedVersion: 2
-        x: 1461
-        y: 31
-        width: 390
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa77403e6be95444b92e4742d8ef5315
-      internalID: 7337808314162481149
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HowTo_normal
-      rect:
-        serializedVersion: 2
-        x: 1001
-        y: 34
-        width: 390
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b92a0858d50655e45bc5f44670425b81
-      internalID: 239493015014907453
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Left_hover
-      rect:
-        serializedVersion: 2
-        x: 518
-        y: 38
-        width: 390
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9efca8b0fc6e7bb46820d9ba53430f5e
-      internalID: -2448557960969093834
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Left_normal
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 43
-        width: 390
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5958a2e571edfe1428bd5bfee1afd5aa
-      internalID: -876261638491424073
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0b41818ff5aa39241b1ef430ecc65dd1
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 

@@ -1,8 +1,14 @@
 fileFormatVersion: 2
-guid: 44ef4f05380fd934b86fab71d5cc3c3c
+guid: 4659beb28f98b4e4fb7c5968fe79f24f
 ModelImporter:
   serializedVersion: 26
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -8945691123924629249
+    second: Armature|Idle
+  - first:
+      74: 3515170952244877179
+    second: Armature|PickUp
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -87,7 +93,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
