@@ -11,13 +11,16 @@ public class Dog : MonoBehaviour
 
 	Vector3 lookposition;
 	Vector3 clickposition;
-	bool digging = false;
+	public bool digging = false;
 	bool gotOrder = false;
 	float diggingtime;
+
+	Animator animator;
 
 	// Start is called before the first frame update
 	void Start(){
 		lookposition = transform.position; 
+		animator = gameObject.GetComponent<Animator>();
 	}
 
 	// Update is called once per frame
@@ -26,6 +29,7 @@ public class Dog : MonoBehaviour
 		if(gotOrder){
 			if (Vector3.Distance (transform.position, lookposition) > 0.4) {
 				transform.position = Vector3.MoveTowards (transform.position, lookposition, Time.deltaTime * speed);
+				animator.SetBool("Walk", true);
 			} else {
 				transform.position = lookposition;
 				digging = true;
@@ -34,8 +38,10 @@ public class Dog : MonoBehaviour
 			transform.LookAt(new Vector3 (dogplace.parent.position.x, transform.position.y, dogplace.parent.position.z));
 			if (Vector3.Distance (transform.position, dogplace.position) > 0.4) {
 				transform.position = Vector3.MoveTowards (transform.position, dogplace.position, Time.deltaTime * speed);
+				animator.SetBool("Walk", true);
 			} else {
 				transform.position = dogplace.position;
+				animator.SetBool("Walk", false);
 			}
 		}
 	}
@@ -53,8 +59,11 @@ public class Dog : MonoBehaviour
 
 	void OnCollisionStay(Collision _collision){
 		if(digging){
+			
+			Debug.Log(digging);
 			if(diggingtime < diggingspeed){
 				diggingtime += Time.deltaTime;
+				animator.SetBool("Dig", true);
 			} else {
 				digging = false;
 				gotOrder = false;
@@ -63,6 +72,7 @@ public class Dog : MonoBehaviour
 				findObject.name = _collision.gameObject.GetComponent<Findspot>().find.name;
 				findObject.transform.position = gameObject.transform.position;
 				Destroy (_collision.gameObject);
+				animator.SetBool("Dig", false);
 			}
 			
 		}

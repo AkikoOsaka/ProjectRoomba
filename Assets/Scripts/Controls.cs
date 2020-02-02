@@ -11,6 +11,9 @@ public class Controls : MonoBehaviour
 	public GameObject workbenchRobosCanvas;
 	public GameObject workbenchArtefactsCanvas;
 	public GameObject dogInventoryCanvas;
+
+	public GameObject tavanbot;
+
 	public List<string> roboDummy = new List <string>();
 	public List<string> artefactDummy = new List <string>();
 	public Transform roboText;
@@ -62,7 +65,9 @@ public class Controls : MonoBehaviour
 						}
 
 					}
-					
+					if(hit.transform.name == "tavanbot") {
+						tavanbot.SendMessage ("SwitchSong");
+					}
 					if(hit.transform.name == "Workbench_Robos"){
 						workbenchRobosCanvas.SetActive(true);
 						menuOpen = true;
