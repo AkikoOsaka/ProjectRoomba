@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class Controls : MonoBehaviour
@@ -12,6 +13,8 @@ public class Controls : MonoBehaviour
 	public GameObject dogInventoryCanvas;
 	public List<string> roboDummy = new List <string>();
 	public List<string> artefactDummy = new List <string>();
+	public Transform roboText;
+	public Transform artefactText;
 	
 	bool menuOpen = false;
 	bool successfulRepair = false;
@@ -87,7 +90,7 @@ public class Controls : MonoBehaviour
 		}
 		
 		if(moveCamera){
-			transform.position = Vector2.MoveTowards (transform.position, new Vector2(playerController.transform.position.x, transform.position.y), Time.deltaTime * speed);
+			transform.parent.transform.position = Vector3.MoveTowards (transform.parent.transform.position, new Vector3(playerController.transform.position.x, transform.parent.transform.position.y, playerController.transform.position.z), Time.deltaTime * speed);
 		}
     }
 	
@@ -208,9 +211,13 @@ public class Controls : MonoBehaviour
 			if(_workbenchname == "Robo"){
 				workbenchRobosCanvas.BroadcastMessage ("DisableSelectionIcon", selectedParts);
 				workbenchRobosCanvas.SetActive(false);
+				int _number = int.Parse(roboText.GetComponent<Text>().text);
+				roboText.GetComponent<Text>().text = (_number + 1).ToString();
 			} else if(_workbenchname == "Artefact") {
 				workbenchArtefactsCanvas.BroadcastMessage ("DisableSelectionIcon", selectedParts);
 				workbenchArtefactsCanvas.SetActive(false);
+				int _number = int.Parse(artefactText.GetComponent<Text>().text);
+				artefactText.GetComponent<Text>().text = (_number + 1).ToString();
 			}
 			
 			menuOpen = false;
