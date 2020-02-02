@@ -1,12 +1,96 @@
 fileFormatVersion: 2
-guid: 8a884c92f17c5f54988467065f87a42e
+guid: 4835a8f1c78870f4187b423a04a6eb53
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3200244027347920088
+    second: Artefact_A_blue
+  - first:
+      213: 2830281632203201846
+    second: Artefact_B_blue
+  - first:
+      213: -827783212910856406
+    second: Artefact C_blue
+  - first:
+      213: -3364094656276984933
+    second: Artefact_A_yellow
+  - first:
+      213: -5737622494339400831
+    second: Artefact_B_yellow
+  - first:
+      213: -1291893426154754499
+    second: Artefact_C_yellow
+  - first:
+      213: 3054397074021665628
+    second: Artefact_ A_red
+  - first:
+      213: 2767427658369789247
+    second: Artefact_B_red
+  - first:
+      213: -2969543405640435418
+    second: Artefact_C_red
+  - first:
+      213: -2168365869835204330
+    second: SelectingIcon
+  - first:
+      213: -5735536425905155558
+    second: ArmL_blue
+  - first:
+      213: -6028221089848475194
+    second: ArmR_blue
+  - first:
+      213: 5630018951679515743
+    second: Body_blue
+  - first:
+      213: -3543453207993852928
+    second: LegR_blue
+  - first:
+      213: 3017488822772829337
+    second: LegL_blue
+  - first:
+      213: 3182543659071583285
+    second: Head_blue
+  - first:
+      213: 8318601595797972140
+    second: Head_red
+  - first:
+      213: 426530430954933906
+    second: LegL_red
+  - first:
+      213: 8050473272690307821
+    second: LegR_red
+  - first:
+      213: -7656197383456417809
+    second: Body_red
+  - first:
+      213: 7859013341458408070
+    second: ArmR_red
+  - first:
+      213: -3344093652569492335
+    second: ArmL_red
+  - first:
+      213: -4082855767577574194
+    second: Head_yellow
+  - first:
+      213: 7073084882466221850
+    second: LegL_yellow
+  - first:
+      213: -6978816722970952119
+    second: LegR_yellow
+  - first:
+      213: 1304856608649432749
+    second: Body_yellow
+  - first:
+      213: 624974917677838921
+    second: ArmR
+  - first:
+      213: 7726531925865496875
+    second: ArmL_yellow
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,13 +118,13 @@ TextureImporter:
     filterMode: -1
     aniso: 2
     mipBias: -100
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,9 +133,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -120,11 +204,599 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Artefact_A_blue
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 845
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f067345ae23d0429bc229e3c84e439
+      internalID: -3200244027347920088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artefact_B_blue
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 845
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de20be8eb153f934f83f7bb5f6212a9c
+      internalID: 2830281632203201846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artefact C_blue
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 847
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630580ff800d3f342908a6369f156fd0
+      internalID: -827783212910856406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artefact_A_yellow
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 844
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863746ff5b205754f83227791d002ac2
+      internalID: -3364094656276984933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artefact_B_yellow
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 844
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c264f9ab591b54c86ee2143e7d0096
+      internalID: -5737622494339400831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artefact_C_yellow
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 850
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d536684c389eaf84bb6613f522dd6555
+      internalID: -1291893426154754499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artefact_ A_red
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 794
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757dc4df230e1d9468c2bd2add5bf71f
+      internalID: 3054397074021665628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artefact_B_red
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 794
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6ae5539b8e7494183fb9f0dda1f924
+      internalID: 2767427658369789247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artefact_C_red
+      rect:
+        serializedVersion: 2
+        x: 1773
+        y: 786
+        width: 147
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e9f151a7aec6d45a6e1a0568c5b2a5
+      internalID: -2969543405640435418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelectingIcon
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 984
+        width: 100
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca4ed2743e54efe4797d0de8c477f84e
+      internalID: -2168365869835204330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmL_blue
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 589
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9755161aa3b690458d7dbdc59763a97
+      internalID: -5735536425905155558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmR_blue
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 575
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19319e2452719c14fbac7d44f783edaa
+      internalID: -6028221089848475194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Body_blue
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 581
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392d3cc0bfa10734283ffd6fe6f68a82
+      internalID: 5630018951679515743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegR_blue
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 596
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb6b79add789654b8536957d79a5c18
+      internalID: -3543453207993852928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegL_blue
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 609
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca64b3d0cf11b441b490e6272bd7b55
+      internalID: 3017488822772829337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Head_blue
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 622
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a72eadd88196534e8a412c1ca77cf2f
+      internalID: 3182543659071583285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Head_red
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 333
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67dd43e41374920408e8546938ba79db
+      internalID: 8318601595797972140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegL_red
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 358
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a66978f4c70ad4f866ffb6bb420dac
+      internalID: 426530430954933906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegR_red
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 349
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec87348509420b74ea0f764abe7f1216
+      internalID: 8050473272690307821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Body_red
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 322
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a487e8034034fb54cab5d4adb04870d7
+      internalID: -7656197383456417809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmR_red
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 338
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36345648a19813140a08b3b7eaa5068a
+      internalID: 7859013341458408070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmL_red
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 340
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b170741d27ec641b7dbf728d24f6e8
+      internalID: -3344093652569492335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Head_yellow
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 48
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f50092defe89c4887beb9911aacf0c
+      internalID: -4082855767577574194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegL_yellow
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 74
+        width: 220
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7c121f29cdae44fb43d7fd4103f17b
+      internalID: 7073084882466221850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegR_yellow
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 69
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e77d44e66ea4c4cacdf9491928c40c
+      internalID: -6978816722970952119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Body_yellow
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 51
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc91a0c5796fbfb49a494114edebf804
+      internalID: 1304856608649432749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmR
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 79
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d8274fb1747beb4d89e92abf2ea605d
+      internalID: 624974917677838921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmL_yellow
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 79
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f170098536455846a946bbcaa310034
+      internalID: 7726531925865496875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fe184bce491f96042bea5fb5f8df8cd4
     internalID: 0
     vertices: []
     indices: 
