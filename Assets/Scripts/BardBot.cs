@@ -13,7 +13,6 @@ public class BardBot : MonoBehaviour
     void Start()
     {  
         animator = gameObject.GetComponent<Animator>();
-        // source = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
