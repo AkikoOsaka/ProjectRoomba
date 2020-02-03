@@ -20,7 +20,7 @@ public class MusicClipSwitcher : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision collision) {
+    void OnTriggerEnter(Collider collision) {
         Debug.Log(collision.gameObject.name);
         if(collision.gameObject.name == "Player")
         {

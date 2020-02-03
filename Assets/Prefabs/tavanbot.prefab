@@ -726,6 +726,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7701891285484927000}
   - component: {fileID: 317678119137170786}
+  - component: {fileID: 1187198130}
+  - component: {fileID: 1187198131}
+  - component: {fileID: 1187198129}
   m_Layer: 0
   m_Name: tavanbot
   m_TagString: Untagged
@@ -764,7 +767,7 @@ Animator:
   m_GameObject: {fileID: 6681587617917012491}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 351eddfebe8be0345beeb61567cedbda, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a6aad9ddb3d9fbe438108a91a2898a0f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -773,6 +776,58 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!54 &1187198130
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6681587617917012491}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!136 &1187198131
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6681587617917012491}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.8132051
+  m_Height: 3.6264114
+  m_Direction: 1
+  m_Center: {x: -0.22033608, y: 1.2356882, z: 0.10919547}
+--- !u!114 &1187198129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6681587617917012491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79077d7a4f6e26741b262e0c2edc312e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  songs:
+  - {fileID: 8300000, guid: 6c60a93e7443a714f8d26bfb0b03f4c5, type: 3}
+  - {fileID: 8300000, guid: 354d2903a83036246970b373350ab2fe, type: 3}
+  - {fileID: 8300000, guid: 4500f71d0ba383641bbf635ba4ab765a, type: 3}
+  - {fileID: 8300000, guid: 3212f3f430141ba42ba1e1249bad41ce, type: 3}
+  - {fileID: 8300000, guid: 47390ebea1e67c544ab3c9de3edeb8ce, type: 3}
+  - {fileID: 8300000, guid: fb6f2597f827adb428810045b8af51a5, type: 3}
+  - {fileID: 8300000, guid: 2c1fc077a186ea94299641f9e01e1f33, type: 3}
+  - {fileID: 8300000, guid: 50d694fc19642b444ab182387b46005d, type: 3}
+  source: {fileID: 0}
 --- !u!1 &6814215685702694745
 GameObject:
   m_ObjectHideFlags: 0

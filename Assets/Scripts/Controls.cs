@@ -23,7 +23,7 @@ public class Controls : MonoBehaviour
 	bool successfulRepair = false;
 	bool moveCamera = false;
 	int wrongPart = 0;
-	float speed = 2f;
+	float speed = 3f;
 	List<string> selectedParts = new List<string>();
 	List<string> redParts = new List<string>();
 	List<string> blueParts = new List<string>();
@@ -55,7 +55,7 @@ public class Controls : MonoBehaviour
 						dogController.SendMessage ("PlaceInInventory", hit.transform.gameObject);
 					}
 					
-					if(hit.transform.name == "Dog"){
+					if(hit.transform.name == "doggo"){
 						dogInventoryCanvas.SetActive(true);
 						menuOpen = true;
 						
